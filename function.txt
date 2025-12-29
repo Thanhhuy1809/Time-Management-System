@@ -1,0 +1,63 @@
+fontend :
+HTML + CSS + Javastrip (ReactJS)
+ +Cấu trúc dùng HTML
+ +Giao diện CSS
+ +Logic Javastrip
+Backend : 
+ +Javastrip 
+ +runtime NodeJs
+ +API  REST/JSON
+
+Database :
+ +MYSQL
+
+Chức năng chính:
+1.Quản lý người dùng
+-Đăng ký, đăng nhập, đăng xuất
+-Xác thực bằng JWT
+2.Quản lý công việc (Task Management)
+-Thêm, sửa, xóa công việc
+-Thiết lập deadline
+-Đánh dấu trạng thái (chưa làm / đang làm / hoàn thành)
+-Gán mức độ ưu tiên (thấp / trung bình / cao)
+3.Quản lý thời gian
+-Bộ đếm thời gian làm việc (Timer / Pomodoro)
+-Ghi nhận thời gian đã làm cho mỗi công việc
+4.Thống kê & báo cáo
+-Thống kê tổng thời gian làm việc theo ngày / tuần / tháng
+-Biểu đồ trực quan (chart)
+🧱 Kiến trúc hệ thống:
+
+Frontend (ReactJS) giao tiếp với Backend thông qua REST API (JSON)
+
+Backend xử lý logic, xác thực và truy vấn dữ liệu
+
+MySQL lưu trữ dữ liệu người dùng, công việc và thời gian
+
+🗄️ Database đề xuất:
+
+users (id, name, email, password)
+
+tasks (id, user_id, title, description, priority, status, deadline)
+
+time_logs (id, task_id, start_time, end_time, duration)
+
+📦 Yêu cầu kỹ thuật:
+
+Code rõ ràng, dễ bảo trì
+
+Tách riêng frontend và backend
+
+Sử dụng RESTful API
+
+Bảo mật mật khẩu bằng hash
+
+Hỗ trợ responsive
+
+🚀 Kết quả mong muốn:
+
+Website hoạt động ổn định
+
+Giao diện thân thiện
+
+Dữ liệu được lưu trữ lâu dài trong MySQL
